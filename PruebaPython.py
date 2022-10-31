@@ -1,38 +1,38 @@
--*- coding: utf-8 -*-
+
 
 animales = ["caballo","camello","gato","perro"]
  
 while (True):
-print("Ingrese una opcion (1-añadir, 2-eliminar, 3-buscar, 4-ordenar, 0-terminar): ")
-Opcion = int( input())
+	print("Ingrese una opcion (1-añadir, 2-eliminar, 3-buscar, 4-ordenar, 0-terminar): ")
+	Opcion = int( input())
 
-if Opcion == 1:
-	print("verifiquemos la lista de animales:")
-	print(animales)
-	i = input("Ingrese el Animal: ")
-	animales.append(i)
-
-if Opcion == 2:
-	if animales >= 0:
+	if Opcion == 1:
 		print("verifiquemos la lista de animales:")
 		print(animales)
-		i = input("Ingrese el Animal a borrar: ")
-		animales.remove(i)
+		i = input("Ingrese el Animal: ")
+		animales.append(i)
 
-if Opcion == 3:
-	print("Ingrese el nombre del animal a buscar:")
-	h = input()
+	if Opcion == 2:
+		if animales >= 0:
+			print("verifiquemos la lista de animales:")
+			print(animales)
+			i = input("Ingrese el Animal a borrar: ")
+			animales.remove(i)
 
-	j = animales.index(h)
-	print(j-1)
-	print(j+1)
+	if Opcion == 3:
+		print("Ingrese el nombre del animal a buscar:")
+		h = input()
 
-else:
-		print("el animal no se ha encontrado")
+		j = animales.index(h)
+		print(j-1)
+		print(j+1)
 
-if Opcion == 4:
-	animales.sort()
-	print(animales)
+	else:
+			print("el animal no se ha encontrado")
 
-if Opcion == 0:
-	break
+	if Opcion == 4:
+		animales.sort()
+		print(animales)
+
+	if Opcion == 0:
+		break

@@ -13,7 +13,7 @@ while (True):
 		animales.append(i)
 
 	if Opcion == 2:
-		if animales >= 0:
+		if len(animales) >= 0:
 			print("verifiquemos la lista de animales:")
 			print(animales)
 			i = input("Ingrese el Animal a borrar: ")
@@ -24,11 +24,10 @@ while (True):
 		h = input()
 
 		j = animales.index(h)
-		print(j-1)
-		print(j+1)
+		print (animales[j-1])
+		print (animales[j+1])
 
-	else:
-			print("el animal no se ha encontrado")
+	
 
 	if Opcion == 4:
 		animales.sort()
